@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
 
     }
 
-
+//klhjdh
     private void getCategories(){
         categoryRVModalArrayList.add(new CategoryRVModal("All","") );
         categoryRVModalArrayList.add(new CategoryRVModal("Technology","") );
