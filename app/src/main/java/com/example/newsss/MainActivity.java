@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         String BASE_URL="https://newsapi.org/";
         Retrofit retrofit =new Retrofit.Builder()
                 .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.class)
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RetrofitAPI retrofitAPI=retrofit.create(RetrofitAPI.class);
         Call<NewsModal> call;
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
                 NewsModal newsModal=response.body();
                 loadingPB.setVisibility(View.GONE);
                 ArrayList<Articles> articles=newsModal.getArticles();
-                for(int i=0;articles.size();i++)
+                for(int i=0;i<articles.size();i++)
                 {
                     articlesArrayList.add(new Articles(articles.get(i).getTitle(),articles.get(i).getDescription(),articles.get(i).getUrlToImage(),articles.get(i).getUrl(),articles.get(i).getContent()));
 
