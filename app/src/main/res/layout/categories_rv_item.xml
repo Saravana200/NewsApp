@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/idTVCategory"
+            android:id="@+id/idIVCategory"
             android:src="@color/yellow"
             android:scaleType="centerCrop"
             />
