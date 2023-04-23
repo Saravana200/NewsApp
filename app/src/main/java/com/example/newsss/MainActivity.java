@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
 
 
 
-    }
+    }//jetbrains
     private void getCategories(){
         categoryRVModalArrayList.add(new CategoryRVModal("All","https://images.unsplash.com/photo-1676027274842-6195f8cdace7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8QkpKTXR0ZURKQTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60") );
         categoryRVModalArrayList.add(new CategoryRVModal("Technology","https://images.unsplash.com/photo-1676027274842-6195f8cdace7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8QkpKTXR0ZURKQTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60") );
